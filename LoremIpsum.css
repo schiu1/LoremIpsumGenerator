@@ -1,0 +1,12 @@
+@import url(https://db.onlinewebfonts.com/c/5ebc67ab9ab9e86517c65dd6ac7c85aa?family=Dauphin);
+
+h1{
+    font-family: "Dauphin";
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+}
+
+hr{
+    width: 80%;
+}
