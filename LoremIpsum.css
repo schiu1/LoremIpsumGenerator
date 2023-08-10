@@ -1,5 +1,9 @@
 @import url(https://db.onlinewebfonts.com/c/5ebc67ab9ab9e86517c65dd6ac7c85aa?family=Dauphin);
 
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h1{
     font-family: "Dauphin";
     font-weight: 400;
@@ -8,5 +12,10 @@ h1{
 }
 
 hr{
-    width: 80%;
+    width: 70%;
+}
+
+.input{
+    margin: 50px;
+    text-align: center;
 }
