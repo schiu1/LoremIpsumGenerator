@@ -18,5 +18,5 @@ function GenerateParagraphs(){
     });
     
     console.log(number);
-    console.log(lorem.generateParagraphs(number));
+    console.log(lorem.generateParagraphs('adwadawda'));
 }

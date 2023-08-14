@@ -205,7 +205,7 @@ function GenerateParagraphs(){
     });
     
     console.log(number);
-    console.log(lorem.generateParagraphs(number));
+    console.log(lorem.generateParagraphs('adwadawda'));
 }
 },{"lorem-ipsum":8}],3:[function(require,module,exports){
 "use strict";
