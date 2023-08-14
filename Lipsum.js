@@ -192,7 +192,7 @@ const LoremIpsum = require("lorem-ipsum").LoremIpsum;
 document.getElementById('b').addEventListener("click", GenerateParagraphs); 
 
 function GenerateParagraphs(){
-    const number = document.getElementById('paraNum').value;
+    const count = document.getElementById('paraNum').value;
     const lorem = new LoremIpsum({
         sentencesPerParagraph: {
             max: 6,
@@ -204,8 +204,8 @@ function GenerateParagraphs(){
         }
     });
     
-    console.log(number);
-    console.log(lorem.generateParagraphs('adwadawda'));
+    console.log(count);
+    console.log(lorem.generateParagraphs(count));
 }
 },{"lorem-ipsum":8}],3:[function(require,module,exports){
 "use strict";
