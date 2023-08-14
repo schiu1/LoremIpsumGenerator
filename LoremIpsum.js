@@ -5,19 +5,18 @@ const LoremIpsum = require("lorem-ipsum").LoremIpsum;
 document.getElementById('b').addEventListener("click", GenerateParagraphs); 
 
 function GenerateParagraphs(){
-    console.log('here');
     const number = document.getElementById('paraNum').value;
     const lorem = new LoremIpsum({
         sentencesPerParagraph: {
-            max: 8,
-            min: 4
+            max: 6,
+            min: 5
         },
         wordsPerSentence: {
             max: 16,
             min: 4
         }
     });
-
-    const para = lorem.generateParagraphs(number);
-    console.log(para);
+    
+    console.log(number);
+    console.log(lorem.generateParagraphs(number));
 }
