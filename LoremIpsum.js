@@ -1,10 +1,11 @@
-import { LoremIpsum, loremIpsum } from "lorem-ipsum";
+const LoremIpsum = require("lorem-ipsum").LoremIpsum;
 
 //had to add event listener instead of use onclick bc i'm inside of a module,
 //so func is not avail outside of the module
-document.addEventListener("click", GenerateParagraphs); 
+document.getElementById('b').addEventListener("click", GenerateParagraphs); 
 
 function GenerateParagraphs(){
+    console.log('here');
     const number = document.getElementById('paraNum').value;
     const lorem = new LoremIpsum({
         sentencesPerParagraph: {
