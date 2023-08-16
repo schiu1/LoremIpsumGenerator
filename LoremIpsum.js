@@ -17,6 +17,5 @@ function GenerateParagraphs(){
         }
     });
     
-    console.log(count);
-    console.log(lorem.generateParagraphs(count));
+    console.log(lorem.generateParagraphs(parseInt(count)));
 }

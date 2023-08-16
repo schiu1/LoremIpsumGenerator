@@ -204,8 +204,7 @@ function GenerateParagraphs(){
         }
     });
     
-    console.log(count);
-    console.log(lorem.generateParagraphs(count));
+    console.log(lorem.generateParagraphs(parseInt(count)));
 }
 },{"lorem-ipsum":8}],3:[function(require,module,exports){
 "use strict";
