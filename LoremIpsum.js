@@ -18,9 +18,13 @@ function GenerateParagraphs(){
     });
     
     const output = lorem.generateParagraphs(parseInt(count));
-    console.log(output);
     const splitPara = output.split("\n");
-    console.log(splitPara[0]);
+    const outputElem = document.getElementById("output");
+
+    while(outputElem.hasChildNodes()){
+        outputElem.removeChild(outputElem.firstChild);
+    }
+    
     for(const para of splitPara){
         const newElem = document.createElement("p");
         newElem.innerHTML = para;
