@@ -195,7 +195,7 @@ function GenerateParagraphs(){
     const count = document.getElementById('paraNum').value;
     const lorem = new LoremIpsum({
         sentencesPerParagraph: {
-            max: 4,
+            max: 8,
             min: 4
         },
         wordsPerSentence: {
@@ -206,7 +206,13 @@ function GenerateParagraphs(){
     
     const output = lorem.generateParagraphs(parseInt(count));
     console.log(output);
-    document.getElementById('out').innerHTML = output;
+    const splitPara = output.split("\n");
+    console.log(splitPara[0]);
+    for(const para of splitPara){
+        const newElem = document.createElement("p");
+        newElem.innerHTML = para;
+        document.getElementById("output").appendChild(newElem);
+    }
 }
 },{"lorem-ipsum":8}],3:[function(require,module,exports){
 "use strict";
