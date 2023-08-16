@@ -8,8 +8,8 @@ function GenerateParagraphs(){
     const count = document.getElementById('paraNum').value;
     const lorem = new LoremIpsum({
         sentencesPerParagraph: {
-            max: 6,
-            min: 5
+            max: 4,
+            min: 4
         },
         wordsPerSentence: {
             max: 16,
@@ -17,5 +17,7 @@ function GenerateParagraphs(){
         }
     });
     
-    console.log(lorem.generateParagraphs(parseInt(count)));
+    const output = lorem.generateParagraphs(parseInt(count));
+    console.log(output);
+    document.getElementById('out').innerHTML = output;
 }
