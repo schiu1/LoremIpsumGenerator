@@ -12,7 +12,7 @@ h1{
 }
 
 hr{
-    width: 70%;
+    width: 60%;
 }
 
 .input{
@@ -23,6 +23,13 @@ hr{
 p{
     text-align: center;
     margin: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.paraCount{
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: bold;
 }
